@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <com.dzyjy.nfc.view.TitleLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip" >
+    </com.dzyjy.nfc.view.TitleLayout>
+    <com.dzyjy.nfc.view.MyItem
+        android:id="@+id/user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </com.dzyjy.nfc.view.MyItem>
+
+    <com.dzyjy.nfc.view.MyItem
+        android:id="@+id/user_real_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </com.dzyjy.nfc.view.MyItem>
+
+    <com.dzyjy.nfc.view.MyItem
+        android:id="@+id/user_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </com.dzyjy.nfc.view.MyItem>
+
+    <com.dzyjy.nfc.view.MyItem
+        android:id="@+id/user_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </com.dzyjy.nfc.view.MyItem>
+<Button 
+    android:onClick="loginOut"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dip"
+    android:layout_marginRight="10dip"
+    android:layout_marginTop="30dip"
+    android:text="退出登录"
+    android:textSize="20sp"
+    android:textColor="@android:color/white"
+    android:background="#FF5841"
+    />
+</LinearLayout>

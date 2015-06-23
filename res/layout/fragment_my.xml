@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <com.dzyjy.nfc.view.MyItem
+            android:id="@+id/my_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </com.dzyjy.nfc.view.MyItem>
+
+        <com.dzyjy.nfc.view.MyItem
+            android:id="@+id/my_language"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </com.dzyjy.nfc.view.MyItem>
+
+        <com.dzyjy.nfc.view.MyItem
+            android:id="@+id/my_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </com.dzyjy.nfc.view.MyItem>
+
+        <com.dzyjy.nfc.view.MyItem
+            android:id="@+id/my_vesion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </com.dzyjy.nfc.view.MyItem>
+
+        <com.dzyjy.nfc.view.MyItem
+            android:id="@+id/my_option"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </com.dzyjy.nfc.view.MyItem>
+
+        <com.dzyjy.nfc.view.MyItem
+            android:id="@+id/my_about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </com.dzyjy.nfc.view.MyItem>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <SurfaceView
+        android:id="@+id/surface_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/photo_image" />
+
+    <com.dzyjy.nfc.view.TitleLayout
+        android:id="@+id/camera_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_gravity="top" >
+    </com.dzyjy.nfc.view.TitleLayout>
+
+    <RelativeLayout
+        android:id="@+id/camera_operation"
+        android:layout_width="match_parent"
+        android:layout_height="100dip"
+        android:layout_gravity="bottom"
+        android:background="@android:color/background_dark" >
+
+        <ImageButton
+            android:id="@+id/btn_cancel"
+            android:layout_width="100dip"
+            android:layout_height="100dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:background="@null"
+            android:src="@drawable/icon_cancel_photo" />
+
+        <ImageButton
+            android:id="@+id/btn_callcamera"
+            android:layout_width="100dip"
+            android:layout_height="100dip"
+            android:layout_centerInParent="true"
+            android:background="@drawable/icon_take_photo"
+            android:text="@string/get_photo" />
+
+        <RelativeLayout
+            android:id="@+id/show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:orientation="horizontal" >
+
+            <FrameLayout
+                android:id="@+id/frame0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/photo_image0"
+                    android:layout_width="45dip"
+                    android:layout_height="45dip"
+                    android:background="@drawable/bg_border"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="1"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="20sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frame1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/frame0" >
+
+                <ImageView
+                    android:id="@+id/photo_image1"
+                    android:layout_width="45dip"
+                    android:layout_height="45dip"
+                    android:layout_marginLeft="3dip"
+                    android:background="@drawable/bg_border"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="2"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="20sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frame2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/frame0"
+                android:layout_below="@+id/frame0" >
+
+                <ImageView
+                    android:id="@+id/photo_image2"
+                    android:layout_width="45dip"
+                    android:layout_height="45dip"
+                    android:layout_marginTop="3dip"
+                    android:background="@drawable/bg_border"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="3"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="20sp" />
+            </FrameLayout>
+   
+        </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout>

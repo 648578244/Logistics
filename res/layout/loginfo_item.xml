@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+  >
+  <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="26dip"
+  >
+    <ImageView
+        android:id="@+id/log_img_node"
+       android:layout_width="10dip"
+        android:layout_height="10dip"
+        android:layout_centerVertical="true"
+        android:background="@drawable/my_shape_green"/>"
+
+    <ImageView
+        android:id="@+id/log_img_clock"
+        android:layout_width="10dip"
+        android:layout_height="10dip"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dip"
+        android:layout_toRightOf="@+id/log_img_node"
+          android:src="@drawable/icon_clock" />
+
+    <TextView
+        android:id="@+id/log_send_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/log_img_clock"
+        android:layout_marginLeft="10dip"
+        android:text="2015-04-21 16:31" />
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dip"
+        android:layout_marginLeft="55dip"
+        android:background="@drawable/eidt">
+        <TextView
+            android:id="@+id/log_send_unit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:text="温州鹿城有限公司"
+            android:layout_marginBottom="8dip"
+             />
+        <ImageView 
+            android:id="@+id/log_img_map"
+            android:layout_width="10dip"
+            android:layout_height="10dip"
+            android:src="@drawable/icon_map"
+            android:layout_below="@+id/log_send_unit"
+            android:layout_marginTop="5dip"
+            />
+        <TextView 
+              android:id="@+id/log_send_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/log_img_map"
+            android:layout_below="@+id/log_send_unit"
+            android:layout_marginLeft="5dip"
+            android:text="温州鹿城有限公司地址"
+            />
+        <TextView 
+              android:id="@+id/log_send_man"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/log_send_address"
+            android:layout_below="@+id/log_send_unit"
+            android:layout_marginLeft="5dip"
+            android:text="发送人"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

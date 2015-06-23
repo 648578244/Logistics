@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.dzyjy.nfc.view.TitleLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip" >
+    </com.dzyjy.nfc.view.TitleLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/eidt" >
+
+        <ImageView
+            android:id="@+id/log_img_item"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dip"
+            android:background="@drawable/icon_lock"/>"
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/log_img_item" >
+
+            <TextView
+                android:id="@+id/log_nfc_id"
+                style="@style/myEditTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="123456789" />
+
+            <TextView
+                android:id="@+id/log_send_all_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/log_nfc_id"
+                android:layout_below="@+id/log_nfc_id"
+                android:text="已发送2天6小时51分钟" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:src="@drawable/icon_right" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="50dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip" >
+
+            <include
+                android:id="@+id/my_line_left"
+                android:layout_width="2px"
+                android:layout_height="match_parent"
+                layout="@layout/line" />
+
+            <com.dzyjy.nfc.view.DashedLine
+                android:id="@+id/my_dashed_line"
+                android:layout_width="10dip"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dip"
+                android:layout_toRightOf="@+id/my_line_left" >
+            </com.dzyjy.nfc.view.DashedLine>
+
+            <include
+                android:id="@+id/my_line_right"
+                android:layout_width="2px"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/my_dashed_line"
+                layout="@layout/line" />
+        </RelativeLayout>
+<!-- <ScrollView 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <include
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                layout="@layout/loginfo_item" />
+
+            <include
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                layout="@layout/loginfo_item" />
+
+            <include
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                layout="@layout/loginfo_item" />
+                <include
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                layout="@layout/loginfo_item" />
+                    <include
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                layout="@layout/loginfo_item" />
+                        <include
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                layout="@layout/loginfo_item" />
+                            <include
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                layout="@layout/loginfo_item" />
+                                <include
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                layout="@layout/loginfo_item" />
+                                    <include
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                layout="@layout/loginfo_item" />
+        </LinearLayout>
+        </ScrollView> -->
+        <ListView 
+            android:id="@+id/log_list_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            ></ListView>
+    </FrameLayout>
+
+</LinearLayout>
